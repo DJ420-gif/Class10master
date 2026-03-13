@@ -1431,4 +1431,15 @@
         mobileNav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('open');
-                mobileNav
+                mobileNav.classList.remove('open');
+            });
+        });
+
+        // Enter key search
+        document.getElementById('search-bar').addEventListener('keydown', e => {
+            if (e.key === 'Enter') performSearch();
+        });
+    </script>
+
+</body>
+</html>
