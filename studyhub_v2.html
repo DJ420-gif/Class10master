@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class 10 Study Hub - Get all the study materials, notes, and solutions for Class 10 subjects including Math, Science, English, and Social Science.">
+    <meta name="keywords" content="Class 10 notes, Class 10 solutions, Class 10 study materials, Class 10 syllabus, Class 10 resources, Class 10 Math, Class 10 Science, Class 10 English, Class 10 Social Science">
+    <meta name="author" content="Class 10 Study Hub">
+    <meta property="og:title" content="Class 10 Study Hub | Your Study Resource Destination">
+    <meta property="og:description" content="Explore comprehensive Class 10 study materials and exam preparation resources for Math, Science, English, and Social Science.">
+    <meta property="og:image" content="https://dj420-gif.github.io/Studymaster/logo.png">
+    <meta property="og:url" content="https://dj420-gif.github.io/Studymaster/">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://dj420-gif.github.io/Studymaster/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://dj420-gif.github.io/Studymaster/sitemap.xml">
+    <title>Class 10 Study Hub | Study Materials, Notes & Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Breadcrumb JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://dj420-gif.github.io/Studymaster/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Subjects",
+                "item": "https://dj420-gif.github.io/Studymaster/#subjects"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Resources",
+                "item": "https://dj420-gif.github.io/Studymaster/resources.html"
+            }
+        ]
+    }
+    </script>
+    <!-- FAQ JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Class 10 Study Hub?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Class 10 Study Hub is an educational resource offering notes, solutions, and study guides for Class 10 students."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are study materials free on Class 10 Study Hub?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, all study materials, notes, and resources are free for students."
+                }
+            }
+        ]
+    }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SWPWBWH4BZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SWPWBWH4BZ');
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* =========================================
+           CSS VARIABLES & RESET
+        ========================================= */
+        :root {
+            --bg: #f5f7ff;
+            --surface: #ffffff;
+            --surface-alt: #eef1ff;
+            --primary: #4f46e5;
+            --primary-dark: #3730a3;
+            --primary-light: #818cf8;
+            --accent: #f59e0b;
+            --accent-dark: #d97706;
+            --text: #1e1b4b;
+            --text-muted: #6b7280;
+            --text-light: #9ca3af;
+            --border: rgba(79, 70, 229, 0.12);
+            --shadow-sm: 0 2px 8px rgba(79,70,229,0.08);
+            --shadow-md: 0 8px 24px rgba(79,70,229,0.12);
+            --shadow-lg: 0 20px 48px rgba(79,70,229,0.16);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+            /* Subject colors */
+            --math: #4f46e5;
+            --science: #059669;
+            --english: #db2777;
+            --social: #d97706;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
+
+        /* =========================================
+           HEADER & NAVIGATION
+        ========================================= */
+        header {
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 0 rgba(79,70,229,0.1), var(--shadow-sm);
+        }
+
+        .header-inner {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+            gap: 16px;
+        }
+
+        .site-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .site-logo h1 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.2;
+        }
+
+        .site-logo h1 span {
+            color: var(--primary);
+        }
+
+        /* Desktop Nav */
+        .nav-links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 4px;
+        }
+
+        .nav-links a {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            background: var(--surface-alt);
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+            color: white !important;
+            padding: 8px 18px !important;
+            border-radius: 8px !important;
+        }
+
+        .nav-cta:hover {
+            opacity: 0.9;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+            transform: translateY(-1px);
+        }
+
+        /* Search */
+        .search-wrapper {
+            display: flex;
+            align-items: center;
+            background: var(--surface-alt);
+            border: 1.5px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+
+        .search-wrapper:focus-within {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+            background: white;
+        }
+
+        #search-bar {
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 9px 14px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text);
+            width: 200px;
+        }
+
+        #search-bar::placeholder {
+            color: var(--text-light);
+        }
+
+        #search-btn {
+            border: none;
+            background: transparent;
+            padding: 9px 13px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        #search-btn:hover {
+            background: rgba(79,70,229,0.08);
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 6px;
+            border-radius: 8px;
+            transition: var(--transition);
+            background: none;
+            border: none;
+            flex-shrink: 0;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--text);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+        /* Mobile nav drawer */
+        .mobile-nav {
+            display: none;
+            flex-direction: column;
+            background: white;
+            border-top: 1px solid var(--border);
+            padding: 12px 24px 16px;
+            gap: 4px;
+        }
+
+        .mobile-nav.open {
+            display: flex;
+        }
+
+        .mobile-nav a {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .mobile-nav a:hover {
+            color: var(--primary);
+            background: var(--surface-alt);
+        }
+
+        .mobile-nav .nav-cta-mob {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white !important;
+            text-align: center;
+            margin-top: 4px;
+        }
+
+        .mobile-search {
+            display: flex;
+            align-items: center;
+            background: var(--surface-alt);
+            border: 1.5px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .mobile-search input {
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 9px 14px;
+            font-size: 0.9rem;
+            flex: 1;
+            color: var(--text);
+        }
+
+        .mobile-search button {
+            border: none;
+            background: transparent;
+            padding: 9px 13px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        /* =========================================
+           HERO SECTION
+        ========================================= */
+        .hero {
+            background: linear-gradient(135deg, #312e81 0%, #4f46e5 50%, #7c3aed 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 72px 24px;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.06) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(245,158,11,0.15) 0%, transparent 50%),
+                radial-gradient(circle at 60% 80%, rgba(255,255,255,0.04) 0%, transparent 40%);
+        }
+
+        .hero-shapes {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.06;
+            background: white;
+        }
+
+        .shape-1 { width: 300px; height: 300px; top: -80px; left: -80px; }
+        .shape-2 { width: 200px; height: 200px; bottom: -60px; right: 10%; }
+        .shape-3 { width: 120px; height: 120px; top: 30%; right: 5%; opacity: 0.04; }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.25);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        .hero h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            color: white;
+            line-height: 1.15;
+            margin-bottom: 18px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h2 .highlight {
+            color: #fcd34d;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.82);
+            max-width: 560px;
+            margin: 0 auto 32px;
+            line-height: 1.7;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #fcd34d;
+            color: #1e1b4b;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 13px 26px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 4px 16px rgba(252,211,77,0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(252,211,77,0.5);
+        }
+
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 1.5px solid rgba(255,255,255,0.35);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 13px 26px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .btn-ghost:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Stats Row */
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            background: white;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stat-item {
+            flex: 1;
+            max-width: 220px;
+            text-align: center;
+            padding: 18px 20px;
+            border-right: 1px solid var(--border);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-num {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            margin-top: 3px;
+            font-weight: 500;
+        }
+
+        /* =========================================
+           SECTIONS GENERAL
+        ========================================= */
+        section {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 64px 24px;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary);
+            background: rgba(79,70,229,0.08);
+            padding: 5px 12px;
+            border-radius: 100px;
+            margin-bottom: 10px;
+        }
+
+        .section-heading {
+            font-family: 'Sora', sans-serif;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-sub {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 40px;
+            max-width: 520px;
+        }
+
+        /* =========================================
+           HOW TO START SECTION
+        ========================================= */
+        #start-class-10 {
+            background: var(--surface-alt);
+            max-width: 100%;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        #start-class-10 > .inner {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .step-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 24px;
+            border: 1.5px solid var(--border);
+            position: relative;
+            transition: var(--transition);
+            overflow: hidden;
+        }
+
+        .step-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .step-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-light);
+        }
+
+        .step-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            font-family: 'Sora', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            flex-shrink: 0;
+        }
+
+        .step-card h3 {
+            font-family: 'Sora', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .step-card p {
+            font-size: 0.87rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* =========================================
+           SUBJECTS SECTION
+        ========================================= */
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .subject-card {
+            background: white;
+            border-radius: var(--radius);
+            border: 1.5px solid var(--border);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .subject-card-header {
+            padding: 22px 22px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            border-bottom: 1.5px solid var(--border);
+        }
+
+        .subject-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        .math-icon { background: rgba(79,70,229,0.1); }
+        .science-icon { background: rgba(5,150,105,0.1); }
+        .english-icon { background: rgba(219,39,119,0.1); }
+        .social-icon { background: rgba(217,119,6,0.1); }
+
+        .subject-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .subject-count {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .download-link-wrap {
+            padding: 14px 22px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            background: rgba(79,70,229,0.06);
+            padding: 9px 14px;
+            border-radius: 8px;
+            transition: var(--transition);
+            border: 1px solid rgba(79,70,229,0.12);
+        }
+
+        .download-btn:hover {
+            background: rgba(79,70,229,0.12);
+        }
+
+        .subject-math .download-btn { color: var(--math); background: rgba(79,70,229,0.06); border-color: rgba(79,70,229,0.15); }
+        .subject-math .download-btn:hover { background: rgba(79,70,229,0.12); }
+        .subject-science .download-btn { color: var(--science); background: rgba(5,150,105,0.06); border-color: rgba(5,150,105,0.15); }
+        .subject-science .download-btn:hover { background: rgba(5,150,105,0.12); }
+        .subject-english .download-btn { color: var(--english); background: rgba(219,39,119,0.06); border-color: rgba(219,39,119,0.15); }
+        .subject-english .download-btn:hover { background: rgba(219,39,119,0.12); }
+        .subject-social .download-btn { color: var(--social); background: rgba(217,119,6,0.06); border-color: rgba(217,119,6,0.15); }
+        .subject-social .download-btn:hover { background: rgba(217,119,6,0.12); }
+
+        .chapter-list {
+            list-style: none;
+            padding: 14px 22px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .chapter-list li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 10px 12px;
+            border-radius: 8px;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .chapter-list li a::before {
+            content: '→';
+            font-size: 0.85rem;
+            color: var(--text-light);
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+
+        .chapter-list li a:hover {
+            background: var(--surface-alt);
+            color: var(--text);
+        }
+
+        .subject-math .chapter-list li a:hover { color: var(--math); background: rgba(79,70,229,0.06); }
+        .subject-science .chapter-list li a:hover { color: var(--science); background: rgba(5,150,105,0.06); }
+        .subject-english .chapter-list li a:hover { color: var(--english); background: rgba(219,39,119,0.06); }
+        .subject-social .chapter-list li a:hover { color: var(--social); background: rgba(217,119,6,0.06); }
+
+        .chapter-list li a:hover::before {
+            transform: translateX(3px);
+        }
+
+        /* Subject top border colors */
+        .subject-math { border-top: 3px solid var(--math); }
+        .subject-science { border-top: 3px solid var(--science); }
+        .subject-english { border-top: 3px solid var(--english); }
+        .subject-social { border-top: 3px solid var(--social); }
+
+        /* =========================================
+           RESOURCES SECTION
+        ========================================= */
+        #resources {
+            background: white;
+            max-width: 100%;
+            border-top: 1px solid var(--border);
+        }
+
+        #resources > .inner {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 64px 24px;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .resource-card {
+            border-radius: var(--radius);
+            padding: 28px;
+            border: 1.5px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            background: var(--bg);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .resource-card-icon {
+            font-size: 2rem;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .resource-card h3 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .resource-card p, .resource-card a.resource-desc {
+            font-size: 0.87rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 18px;
+        }
+
+        .resource-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .resource-link:hover {
+            gap: 10px;
+        }
+
+        /* =========================================
+           CONTACT SECTION
+        ========================================= */
+        .contact-section {
+            text-align: center;
+            padding: 64px 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 40px;
+            border: 1.5px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-card .emoji {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .contact-card h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .contact-card p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface-alt);
+            border: 1.5px solid var(--border);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 12px 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .contact-email:hover {
+            background: rgba(79,70,229,0.08);
+            border-color: var(--primary-light);
+        }
+
+        /* =========================================
+           BACK TO TOP
+        ========================================= */
+        #back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 24px;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            z-index: 99;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition);
+            box-shadow: 0 4px 16px rgba(79,70,229,0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #back-to-top.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        #back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(79,70,229,0.45);
+        }
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+        footer {
+            background: var(--text);
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            padding: 24px;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        /* =========================================
+           MODAL (existing style preserved + enhanced)
+        ========================================= */
+        #modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 14, 40, 0.65);
+            backdrop-filter: blur(4px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* =========================================
+           ANIMATIONS
+        ========================================= */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-content { animation: fadeUp 0.7s ease both; }
+        .hero-content .hero-badge { animation-delay: 0.05s; }
+        .hero-content h2 { animation: fadeUp 0.7s 0.1s ease both; }
+        .hero-content p { animation: fadeUp 0.7s 0.18s ease both; }
+        .hero-actions { animation: fadeUp 0.7s 0.26s ease both; }
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+        @media (max-width: 1024px) {
+            #search-bar { width: 160px; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .search-wrapper { display: none; }
+            .hamburger { display: flex; }
+
+            .hero { padding: 52px 20px; }
+            .hero h2 { font-size: 1.8rem; }
+
+            .stats-row { flex-wrap: wrap; }
+            .stat-item { flex: 0 0 50%; max-width: 50%; border-bottom: 1px solid var(--border); }
+            .stat-item:nth-child(2) { border-right: none; }
+
+            section { padding: 48px 20px; }
+
+            .steps-grid { grid-template-columns: 1fr; }
+            .subjects-grid { grid-template-columns: 1fr; }
+            .resources-grid { grid-template-columns: 1fr; }
+
+            .contact-section { padding: 48px 20px; }
+            .contact-card { padding: 28px 20px; }
+
+            #resources > .inner { padding: 48px 20px; }
+            #start-class-10 { padding: 48px 20px; }
+        }
+
+        @media (max-width: 480px) {
+            .header-inner { height: 60px; padding: 0 16px; }
+            .site-logo h1 { font-size: 1rem; }
+            .hero { padding: 44px 16px; }
+            .hero-actions { flex-direction: column; align-items: center; }
+            .btn-primary, .btn-ghost { width: 100%; max-width: 280px; justify-content: center; }
+            .stat-item { flex: 0 0 50%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================= -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">
+                <div class="logo-icon">📚</div>
+                <h1>Class 10 <span>Study Hub</span></h1>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="studychat/index.html">Contact</a></li>
+                <li><a href="studychat/index2.html" class="nav-cta">💬 Start Chat</a></li>
+            </ul>
+
+            <div class="search-wrapper">
+                <input type="text" id="search-bar" placeholder="Search chapters…">
+                <button id="search-btn" onclick="performSearch()">🔍</button>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Drawer -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="#subjects">Subjects</a>
+            <a href="resources.html">Resources</a>
+            <a href="studychat/index.html">Contact</a>
+            <a href="studychat/index2.html" class="nav-cta-mob">💬 Start Chat</a>
+            <div class="mobile-search">
+                <input type="text" id="search-bar-mob" placeholder="Search chapters…">
+                <button onclick="performSearch()">🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- =========================================
+         HERO
+    ========================================= -->
+    <div class="hero" id="home">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">🎓 Free for all students</div>
+            <h2>Ace Your Boards with<br><span class="highlight">Expert Study Materials</span></h2>
+            <p>Your one-stop destination for Class 10 notes, solutions & resources. Beat the stereotype — you don't need to be Gupta ji ka Beta to top!</p>
+            <div class="hero-actions">
+                <a href="#subjects" class="btn-primary">📖 Explore Subjects</a>
+                <a href="studychat/index2.html" class="btn-ghost">💬 Chat with AI Tutor</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="stats-row">
+        <div class="stat-item">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Core Subjects</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Free Resources</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">NCERT</div>
+            <div class="stat-label">Aligned Content</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">Expert</div>
+            <div class="stat-label">Curated Notes</div>
+        </div>
+    </div>
+
+    <!-- =========================================
+         HOW TO START
+    ========================================= -->
+    <section id="start-class-10">
+        <div class="inner">
+            <div class="section-label">✨ Getting Started</div>
+            <h2 class="section-heading">How to Start Class 10 Effectively</h2>
+            <p class="section-sub">Follow this proven roadmap to set yourself up for board exam success.</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h3>Understand the Syllabus</h3>
+                    <p>Go through the syllabus for each subject carefully and identify the most important topics.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h3>Make a Study Schedule</h3>
+                    <p>Create a daily and weekly timetable to ensure balanced study across all subjects.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h3>Use Quality Materials</h3>
+                    <p>Refer to NCERT books, previous year papers, and expert-curated notes on our platform.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">4</div>
+                    <h3>Practice Regularly</h3>
+                    <p>Practice sample papers, take mock tests, and revise frequently to retain concepts better.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">5</div>
+                    <h3>Stay Consistent</h3>
+                    <p>Maintain consistency and stay motivated by setting short-term goals and celebrating wins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SUBJECTS
+    ========================================= -->
+    <section id="subjects">
+        <div class="section-label">📚 Chapters & Notes</div>
+        <h2 class="section-heading">Explore All Subjects</h2>
+        <p class="section-sub">Expert-curated notes and solutions for every chapter — designed to be understood by every student.</p>
+
+        <div class="subjects-grid">
+            <!-- Math -->
+            <div class="subject-card subject-math">
+                <div class="subject-card-header">
+                    <div class="subject-icon math-icon">🔢</div>
+                    <div>
+                        <div class="subject-title">Mathematics</div>
+                        <div class="subject-count">5 chapters available</div>
+                    </div>
+                </div>
+                <div class="download-link-wrap">
+                    <a href="https://drive.google.com/uc?export=download&id=13jKBtcFebvHlEgEwE2xwHeABiePQI6n1" target="_blank" class="download-btn">
+                        ⬇️ MTG Sample Paper Solutions
+                    </a>
+                </div>
+                <ul class="chapter-list">
+                    <li><a href="#" onclick="showOptions('Math - Real Numbers')">Real Numbers</a></li>
+                    <li><a href="#" onclick="showOptions('Math - Polynomials')">Polynomials</a></li>
+                    <li><a href="#" onclick="showOptions('Math - Quadratic Equations')">Quadratic Equations</a></li>
+                    <li><a href="#" onclick="showOptions('Math - Surface Areas and Volumes')">Surface Areas and Volumes</a></li>
+                    <li><a href="#" onclick="showOptions('Math - Statistics')">Statistics</a></li>
+                </ul>
+            </div>
+
+            <!-- Science -->
+            <div class="subject-card subject-science">
+                <div class="subject-card-header">
+                    <div class="subject-icon science-icon">🔬</div>
+                    <div>
+                        <div class="subject-title">Science</div>
+                        <div class="subject-count">4 chapters available</div>
+                    </div>
+                </div>
+                <div class="download-link-wrap">
+                    <a href="https://drive.google.com/uc?export=download&id=13VKQbz16iI8Hb4YF68ypG5N-2kWOmVPj" target="_blank" class="download-btn">
+                        ⬇️ MTG Sample Paper Solutions
+                    </a>
+                </div>
+                <ul class="chapter-list">
+                    <li><a href="#" onclick="showOptions('Science - Chemical Reactions')">Chemical Reactions</a></li>
+                    <li><a href="#" onclick="showOptions('Science - Acids, Bases, and Salts')">Acids, Bases & Salts</a></li>
+                    <li><a href="#" onclick="showOptions('Science - Life Processes')">Life Processes</a></li>
+                    <li><a href="#" onclick="showOptions('Science - Electricity')">Electricity</a></li>
+                </ul>
+            </div>
+
+            <!-- English -->
+            <div class="subject-card subject-english">
+                <div class="subject-card-header">
+                    <div class="subject-icon english-icon">📖</div>
+                    <div>
+                        <div class="subject-title">English</div>
+                        <div class="subject-count">3 chapters available</div>
+                    </div>
+                </div>
+                <div class="download-link-wrap">
+                    <a href="https://drive.google.com/uc?export=download&id=13qHrGQ0KuFes3AVBgyIOjAqRJUsbUaRj" target="_blank" class="download-btn">
+                        ⬇️ MTG Sample Paper Solutions
+                    </a>
+                </div>
+                <ul class="chapter-list">
+                    <li><a href="#" onclick="showOptions('English - The First Flight')">The First Flight</a></li>
+                    <li><a href="#" onclick="showOptions('English - Footprints Without Feet')">Footprints Without Feet</a></li>
+                    <li><a href="#" onclick="showOptions('English - Grammar')">Grammar</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Science -->
+            <div class="subject-card subject-social">
+                <div class="subject-card-header">
+                    <div class="subject-icon social-icon">🌍</div>
+                    <div>
+                        <div class="subject-title">Social Science</div>
+                        <div class="subject-count">3 chapters available</div>
+                    </div>
+                </div>
+                <div class="download-link-wrap">
+                    <a href="https://drive.google.com/uc?export=download&id=13owVx-6zl1L3-EPTVvoGnFeDccUtljM9" target="_blank" class="download-btn">
+                        ⬇️ MTG Sample Paper Solutions
+                    </a>
+                </div>
+                <ul class="chapter-list">
+                    <li><a href="#" onclick="showOptions('Social Science - History')">History</a></li>
+                    <li><a href="#" onclick="showOptions('Social Science - Geography')">Geography</a></li>
+                    <li><a href="#" onclick="showOptions('Social Science - Economics')">Economics</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         RESOURCES
+    ========================================= -->
+    <section id="resources">
+        <div class="inner">
+            <div class="section-label">📂 Downloads</div>
+            <h2 class="section-heading">Study Resources</h2>
+            <p class="section-sub">Hand-picked resources to help you prepare smarter, not just harder.</p>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <span class="resource-card-icon">📄</span>
+                    <h3>Previous Year Papers</h3>
+                    <a href="previousyearpapers.html" class="resource-desc">
+                        Download board exam question papers from previous years. Analysing past papers is the #1 strategy for high scores.
+                    </a>
+                    <a href="previousyearpapers.html" class="resource-link">Download Papers →</a>
+                </div>
+                <div class="resource-card">
+                    <span class="resource-card-icon">📝</span>
+                    <h3>Sample Papers</h3>
+                    <a href="class-10-sample-papers.html" class="resource-desc">
+                        Expert-curated sample papers crafted by analysing the latest board exam pattern. Practice like the real thing.
+                    </a>
+                    <a href="class-10-sample-papers.html" class="resource-link">Download Papers →</a>
+                </div>
+                <div class="resource-card">
+                    <span class="resource-card-icon">⏰</span>
+                    <h3>Time Management Tips</h3>
+                    <a href="time management tips.html" class="resource-desc">
+                        Smart strategies and schedules to make the most of your study time and reduce exam stress effectively.
+                    </a>
+                    <a href="time management tips.html" class="resource-link">Read Tips →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         CONTACT
+    ========================================= -->
+    <div class="contact-section" id="contact">
+        <div class="contact-card">
+            <span class="emoji">✉️</span>
+            <h2>Get in Touch</h2>
+            <p>Have questions, suggestions, or need help with study materials? We'd love to hear from you.</p>
+            <a href="/cdn-cgi/l/email-protection#6e1d1b1e1e011c1a2e0d020f1d1d5f5e1d1a1b0a17061b0c400d0103" class="contact-email">
+                📧 <span class="__cf_email__" data-cfemail="572422272738252317343b3624246667242322332e3f22357934383a">[email&#160;protected]</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to top">⬆</button>
+
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
+    <footer>
+        <p>© 2024 Class 10 Study Hub · Made with ❤️ for students</p>
+    </footer>
+
+    <!-- =========================================
+         SCRIPTS (all original preserved)
+    ========================================= -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Show options modal
+        function showOptions(chapter) {
+            const options = `
+                <h2>${chapter}</h2>
+                <ul style="list-style: none; padding: 0; font-size: 18px;">
+                    <li><a href="#" style="color: #4CAF50; text-decoration: none; display: block; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin: 10px 0;">📄 Notes</a></li>
+                    <li><a href="#" style="color: #4CAF50; text-decoration: none; display: block; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin: 10px 0;">📘 Solutions</a></li>
+                    <li><a href="#" style="color: #4CAF50; text-decoration: none; display: block; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin: 10px 0;">📝 Tests</a></li>
+                    <li><a href="#" style="color: #4CAF50; text-decoration: none; display: block; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin: 10px 0;">📂 Related Resources</a></li>
+                </ul>
+                <button style="padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 20px;" onclick="closeModal()">Close</button>
+            `;
+            const modal = document.createElement('div');
+            modal.id = 'modal';
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+            modal.style.display = 'flex';
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+            modal.style.zIndex = '1000';
+
+            const modalContent = document.createElement('div');
+            modalContent.style.backgroundColor = '#fff';
+            modalContent.style.padding = '30px';
+            modalContent.style.borderRadius = '10px';
+            modalContent.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            modalContent.style.textAlign = 'center';
+            modalContent.style.width = '80%';
+            modalContent.style.maxWidth = '500px';
+            modalContent.innerHTML = options;
+
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+        }
+
+        // Close modal
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            if (modal) modal.remove();
+        }
+
+        // Perform search
+        function performSearch() {
+            const query = document.getElementById('search-bar').value.toUpperCase();
+            const sections = document.querySelectorAll('.subject-item, .resource-item, #home, #contact');
+            if (!query) {
+                sections.forEach(section => (section.style.display = ''));
+                return;
+            }
+            sections.forEach(section => {
+                if (section.innerText.toUpperCase().includes(query)) {
+                    section.style.display = '';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Responsive menu toggle (original)
+        const menuIcon = document.createElement('div');
+        menuIcon.className = 'menu-icon';
+        menuIcon.innerText = '☰';
+        const headerContainer = document.querySelector('header .header-inner');
+        if (headerContainer) {
+            // Skip prepend since new nav is already set up
+        }
+    </script>
+
+    <!-- Additional UI scripts -->
+    <script>
+        // Hamburger toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileNav.classList.toggle('open');
+        });
+
+        // Back to top
+        const backBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) backBtn.classList.add('visible');
+            else backBtn.classList.remove('visible');
+        });
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close mobile nav on link click
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                mobileNav
